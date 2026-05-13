@@ -1,0 +1,351 @@
+{
+  "exportedAt": "2026-05-12T10:00:00.000",
+  "version": 1,
+  "categories": [
+    {
+      "id": "cat-restaurantes-001",
+      "name": "Restaurantes",
+      "iconKey": "food",
+      "colorKey": "orange",
+      "typeIndex": 1,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000",
+      "isDefault": false,
+      "isSynced": false
+    },
+    {
+      "id": "cat-transporte-001",
+      "name": "Uber & Taxis",
+      "iconKey": "transport",
+      "colorKey": "blue",
+      "typeIndex": 1,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000",
+      "isDefault": false,
+      "isSynced": false
+    },
+    {
+      "id": "cat-suscripciones-001",
+      "name": "Suscripciones",
+      "iconKey": "subscriptions",
+      "colorKey": "red",
+      "typeIndex": 1,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000",
+      "isDefault": false,
+      "isSynced": false
+    },
+    {
+      "id": "cat-gimnasio-001",
+      "name": "Gimnasio",
+      "iconKey": "gym",
+      "colorKey": "purple",
+      "typeIndex": 1,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000",
+      "isDefault": false,
+      "isSynced": false
+    },
+    {
+      "id": "cat-mercado-001",
+      "name": "Mercado",
+      "iconKey": "shopping",
+      "colorKey": "teal",
+      "typeIndex": 1,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000",
+      "isDefault": false,
+      "isSynced": false
+    },
+    {
+      "id": "cat-salario-001",
+      "name": "Salario empresa",
+      "iconKey": "salary",
+      "colorKey": "green",
+      "typeIndex": 0,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000",
+      "isDefault": false,
+      "isSynced": false
+    },
+    {
+      "id": "cat-freelance-001",
+      "name": "Proyectos freelance",
+      "iconKey": "freelance",
+      "colorKey": "cyan",
+      "typeIndex": 0,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000",
+      "isDefault": false,
+      "isSynced": false
+    }
+  ],
+  "budgets": [
+    {
+      "id": "bud-restaurantes-001",
+      "name": "Restaurantes del mes",
+      "amount": 600000,
+      "alertThreshold": 0.8,
+      "categoryId": "cat-restaurantes-001",
+      "isActive": true,
+      "isSynced": false,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000"
+    },
+    {
+      "id": "bud-transporte-001",
+      "name": "Transporte",
+      "amount": 300000,
+      "alertThreshold": 0.75,
+      "categoryId": "cat-transporte-001",
+      "isActive": true,
+      "isSynced": false,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000"
+    },
+    {
+      "id": "bud-suscripciones-001",
+      "name": "Suscripciones",
+      "amount": 100000,
+      "alertThreshold": 0.9,
+      "categoryId": "cat-suscripciones-001",
+      "isActive": true,
+      "isSynced": false,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000"
+    },
+    {
+      "id": "bud-total-001",
+      "name": "Gasto total mensual",
+      "amount": 3000000,
+      "alertThreshold": 0.8,
+      "categoryId": null,
+      "isActive": true,
+      "isSynced": false,
+      "createdAt": "2026-05-01T08:00:00.000",
+      "updatedAt": "2026-05-01T08:00:00.000"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx-001",
+      "amount": 5000000,
+      "typeIndex": 0,
+      "description": "Salario mayo",
+      "date": "2026-05-01T09:00:00.000",
+      "createdAt": "2026-05-01T09:00:00.000",
+      "updatedAt": "2026-05-01T09:00:00.000",
+      "categoryId": "cat-salario-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-002",
+      "amount": 850000,
+      "typeIndex": 0,
+      "description": "Proyecto Acme — primera entrega",
+      "date": "2026-05-08T14:30:00.000",
+      "createdAt": "2026-05-08T14:30:00.000",
+      "updatedAt": "2026-05-08T14:30:00.000",
+      "categoryId": "cat-freelance-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-003",
+      "amount": 45000,
+      "typeIndex": 1,
+      "description": "Almuerzo con clientes",
+      "date": "2026-05-02T13:15:00.000",
+      "createdAt": "2026-05-02T13:15:00.000",
+      "updatedAt": "2026-05-02T13:15:00.000",
+      "categoryId": "cat-restaurantes-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-004",
+      "amount": 120000,
+      "typeIndex": 1,
+      "description": "Cena de aniversario",
+      "date": "2026-05-04T20:45:00.000",
+      "createdAt": "2026-05-04T20:45:00.000",
+      "updatedAt": "2026-05-04T20:45:00.000",
+      "categoryId": "cat-restaurantes-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-005",
+      "amount": 78000,
+      "typeIndex": 1,
+      "description": "Almuerzo sábado",
+      "date": "2026-05-09T13:00:00.000",
+      "createdAt": "2026-05-09T13:00:00.000",
+      "updatedAt": "2026-05-09T13:00:00.000",
+      "categoryId": "cat-restaurantes-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-006",
+      "amount": 95000,
+      "typeIndex": 1,
+      "description": "Pizza viernes",
+      "date": "2026-05-08T21:00:00.000",
+      "createdAt": "2026-05-08T21:00:00.000",
+      "updatedAt": "2026-05-08T21:00:00.000",
+      "categoryId": "cat-restaurantes-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-007",
+      "amount": 180000,
+      "typeIndex": 1,
+      "description": "Cena familiar Día de la Madre",
+      "date": "2026-05-10T19:30:00.000",
+      "createdAt": "2026-05-10T19:30:00.000",
+      "updatedAt": "2026-05-10T19:30:00.000",
+      "categoryId": "cat-restaurantes-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-008",
+      "amount": 22000,
+      "typeIndex": 1,
+      "description": "Uber al trabajo",
+      "date": "2026-05-03T08:15:00.000",
+      "createdAt": "2026-05-03T08:15:00.000",
+      "updatedAt": "2026-05-03T08:15:00.000",
+      "categoryId": "cat-transporte-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-009",
+      "amount": 28000,
+      "typeIndex": 1,
+      "description": "Uber regreso",
+      "date": "2026-05-03T18:45:00.000",
+      "createdAt": "2026-05-03T18:45:00.000",
+      "updatedAt": "2026-05-03T18:45:00.000",
+      "categoryId": "cat-transporte-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-010",
+      "amount": 35000,
+      "typeIndex": 1,
+      "description": "Taxi aeropuerto",
+      "date": "2026-05-06T05:00:00.000",
+      "createdAt": "2026-05-06T05:00:00.000",
+      "updatedAt": "2026-05-06T05:00:00.000",
+      "categoryId": "cat-transporte-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-011",
+      "amount": 45000,
+      "typeIndex": 1,
+      "description": "Uber reunión cliente",
+      "date": "2026-05-07T10:30:00.000",
+      "createdAt": "2026-05-07T10:30:00.000",
+      "updatedAt": "2026-05-07T10:30:00.000",
+      "categoryId": "cat-transporte-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-012",
+      "amount": 65000,
+      "typeIndex": 1,
+      "description": "Gasolina fin de semana",
+      "date": "2026-05-11T11:00:00.000",
+      "createdAt": "2026-05-11T11:00:00.000",
+      "updatedAt": "2026-05-11T11:00:00.000",
+      "categoryId": "cat-transporte-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-013",
+      "amount": 35000,
+      "typeIndex": 1,
+      "description": "Netflix",
+      "date": "2026-05-01T06:00:00.000",
+      "createdAt": "2026-05-01T06:00:00.000",
+      "updatedAt": "2026-05-01T06:00:00.000",
+      "categoryId": "cat-suscripciones-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-014",
+      "amount": 20000,
+      "typeIndex": 1,
+      "description": "Spotify Premium",
+      "date": "2026-05-02T06:00:00.000",
+      "createdAt": "2026-05-02T06:00:00.000",
+      "updatedAt": "2026-05-02T06:00:00.000",
+      "categoryId": "cat-suscripciones-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-015",
+      "amount": 32000,
+      "typeIndex": 1,
+      "description": "iCloud + GitHub",
+      "date": "2026-05-05T06:00:00.000",
+      "createdAt": "2026-05-05T06:00:00.000",
+      "updatedAt": "2026-05-05T06:00:00.000",
+      "categoryId": "cat-suscripciones-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-016",
+      "amount": 150000,
+      "typeIndex": 1,
+      "description": "Mensualidad gimnasio",
+      "date": "2026-05-01T07:30:00.000",
+      "createdAt": "2026-05-01T07:30:00.000",
+      "updatedAt": "2026-05-01T07:30:00.000",
+      "categoryId": "cat-gimnasio-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-017",
+      "amount": 320000,
+      "typeIndex": 1,
+      "description": "Mercado quincena 1",
+      "date": "2026-05-04T11:00:00.000",
+      "createdAt": "2026-05-04T11:00:00.000",
+      "updatedAt": "2026-05-04T11:00:00.000",
+      "categoryId": "cat-mercado-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-018",
+      "amount": 410000,
+      "typeIndex": 1,
+      "description": "Mercado quincena 2",
+      "date": "2026-05-11T11:00:00.000",
+      "createdAt": "2026-05-11T11:00:00.000",
+      "updatedAt": "2026-05-11T11:00:00.000",
+      "categoryId": "cat-mercado-001",
+      "isSynced": false
+    },
+    {
+      "id": "tx-019",
+      "amount": 250000,
+      "typeIndex": 1,
+      "description": "Cumpleaños amigo (sin categoría)",
+      "date": "2026-05-09T20:00:00.000",
+      "createdAt": "2026-05-09T20:00:00.000",
+      "updatedAt": "2026-05-09T20:00:00.000",
+      "categoryId": null,
+      "isSynced": false
+    },
+    {
+      "id": "tx-020",
+      "amount": 18000,
+      "typeIndex": 1,
+      "description": "Café de la mañana",
+      "date": "2026-05-12T07:45:00.000",
+      "createdAt": "2026-05-12T07:45:00.000",
+      "updatedAt": "2026-05-12T07:45:00.000",
+      "categoryId": "cat-restaurantes-001",
+      "isSynced": false
+    }
+  ]
+}
