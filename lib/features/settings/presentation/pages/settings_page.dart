@@ -79,7 +79,7 @@ class SettingsPage extends ConsumerWidget {
       if (!context.mounted) return;
       showDialog<void>(
         context: context,
-        builder: (_) => AlertDialog(
+        builder: (dialogContext) => AlertDialog(
           title: const Text('Exportación completada'),
           content: SelectableText(
             file.path,
@@ -87,7 +87,7 @@ class SettingsPage extends ConsumerWidget {
           ),
           actions: [
             TextButton(
-              onPressed: () => Navigator.of(context).pop(),
+              onPressed: () => Navigator.of(dialogContext).pop(),
               child: const Text('Cerrar'),
             ),
           ],
@@ -103,7 +103,7 @@ class SettingsPage extends ConsumerWidget {
     final controller = TextEditingController();
     final result = await showDialog<bool>(
       context: context,
-      builder: (_) => AlertDialog(
+      builder: (dialogContext) => AlertDialog(
         title: const Text('Importar datos'),
         content: SizedBox(
           width: 480,
@@ -117,11 +117,11 @@ class SettingsPage extends ConsumerWidget {
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.of(context).pop(false),
+            onPressed: () => Navigator.of(dialogContext).pop(false),
             child: const Text('Cancelar'),
           ),
           FilledButton(
-            onPressed: () => Navigator.of(context).pop(true),
+            onPressed: () => Navigator.of(dialogContext).pop(true),
             child: const Text('Importar'),
           ),
         ],
@@ -144,17 +144,17 @@ class SettingsPage extends ConsumerWidget {
   Future<void> _confirmClear(BuildContext context) async {
     final ok = await showDialog<bool>(
       context: context,
-      builder: (_) => AlertDialog(
+      builder: (dialogContext) => AlertDialog(
         title: const Text('Borrar todos los datos'),
         content: const Text(
             'Esta acción no se puede deshacer. Las categorías por defecto se re-crearán al reiniciar la app.'),
         actions: [
           TextButton(
-            onPressed: () => Navigator.of(context).pop(false),
+            onPressed: () => Navigator.of(dialogContext).pop(false),
             child: const Text('Cancelar'),
           ),
           FilledButton(
-            onPressed: () => Navigator.of(context).pop(true),
+            onPressed: () => Navigator.of(dialogContext).pop(true),
             child: const Text('Borrar'),
           ),
         ],
@@ -176,13 +176,13 @@ class SettingsPage extends ConsumerWidget {
     ];
     await showModalBottomSheet<void>(
       context: context,
-      builder: (_) => SafeArea(
+      builder: (sheetContext) => SafeArea(
         child: RadioGroup<String>(
           groupValue: current,
           onChanged: (v) {
             if (v != null) {
               ctrl.setLocale(v);
-              Navigator.of(context).pop();
+              Navigator.of(sheetContext).pop();
             }
           },
           child: Column(
@@ -238,13 +238,13 @@ class _ThemeTile extends StatelessWidget {
       }),
       onTap: () => showModalBottomSheet<void>(
         context: context,
-        builder: (_) => SafeArea(
+        builder: (sheetContext) => SafeArea(
           child: RadioGroup<ThemeMode>(
             groupValue: current,
             onChanged: (v) {
               if (v != null) {
                 onChanged(v);
-                Navigator.of(context).pop();
+                Navigator.of(sheetContext).pop();
               }
             },
             child: Column(
@@ -282,13 +282,13 @@ class _CurrencyTile extends StatelessWidget {
       subtitle: Text(current),
       onTap: () => showModalBottomSheet<void>(
         context: context,
-        builder: (_) => SafeArea(
+        builder: (sheetContext) => SafeArea(
           child: RadioGroup<String>(
             groupValue: current,
             onChanged: (v) {
               if (v != null) {
                 onChanged(v);
-                Navigator.of(context).pop();
+                Navigator.of(sheetContext).pop();
               }
             },
             child: Column(
