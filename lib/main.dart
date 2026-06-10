@@ -49,6 +49,27 @@ class GastosPersonalesApp extends ConsumerWidget {
       darkTheme: AppTheme.dark(),
       themeMode: settings.themeMode,
       routerConfig: router,
+      builder: (context, child) {
+        const double maxMobileWidth = 480;
+        final data = MediaQuery.of(context);
+        final constrainedWidth = data.size.width > maxMobileWidth
+            ? maxMobileWidth
+            : data.size.width;
+        return ColoredBox(
+          color: const Color(0xFF1A1A2E),
+          child: Center(
+            child: SizedBox(
+              width: constrainedWidth,
+              child: MediaQuery(
+                data: data.copyWith(
+                  size: Size(constrainedWidth, data.size.height),
+                ),
+                child: child!,
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
